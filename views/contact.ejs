@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--
+  
+  Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+  Fair is fair. Answers on a postcard, please.            
+  
+  Start.
+  
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+  8   8               8               8           8                   8   8
+  8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+  8               8       8   8           8           8   8   8       8   8
+  8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+  8       8   8               8           8   8   8   8   8           8   8
+  8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+  8   8               8   8   8       8           8           8       8   8
+  8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+  8           8       8   8       8   8       8           8   8           8
+  8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+  8       8       8   8   8       8       8       8   8   8       8       8
+  8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+  8           8   8           8       8   8       8   8       8           8
+  8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+  8   8       8           8           8       8   8   8               8   8
+  8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+  8   8           8   8   8   8   8           8               8   8       8
+  8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+  8   8       8   8   8           8           8   8       8               8
+  8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+  8   8                   8           8               8               8   8
+  8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+  
+  End.
+  
+  -->
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+  
+.fa-linkedin {
+  background: transparent;
+  border:2px solid white;
+  color:#007bb5;
+    padding: 20px;
+  font-size: 3rem;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+  margin-left: 10%;
+
+}
+.fa-github {
+  background: transparent;
+  border:2px solid white;
+  color: #500877;
+    padding: 20px;
+  font-size: 3rem;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+.fa-instagram {
+  color: purple;
+    background: transparent;
+  border:2px solid white;
+    padding: 20px;
+  font-size: 3rem;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+  margin-left: 10%;
+
+}
+.fa-facebook {
+  background: transparent;
+  border:2px solid white;
+  color: #007bb5;
+    padding: 20px;
+  font-size: 3rem;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+  margin-left: 10%;
+}
+.fa{
+  font-size: 1.7em;
+    border-radius: 40%;
+    padding: 0.5em;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+    animation-duration: 1.6s;
+    text-decoration: none;
+}
+body {
+	color: white;
+	background-color: #414a50;
+	background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.main-text{
+font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+h3{
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id="main">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Personal Blog</a>
+    </div>
+    <div class="nav navbar-nav navbar-right">
+    	<li><a href="#" style="padding-top:6px;padding-bottom:6px;" onclick="openNav()"><span  class="glyphicon glyphicon-th-large click" style="font-size: 3rem;"></span></a></li>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="animated bounceInDown " style="position: absolute;">
+  <a href="#" id="logo" style="margin-top:240px;padding: 20px;" class="fa fa-github"></a>
+  <a href="#" id="logo" style="margin-top:240px;padding: 20px;" class="fa fa-facebook"></a>
+  <a href="#" id="logo" style="margin-top:240px;padding: 20px;" class="fa fa-linkedin"></a>
+  <a href="#" id="logo" style="margin-top:240px;padding: 20px;" class="fa fa-instagram"></a>
+</div> -->
+<div class="container main-text">
+  <h1 style="font-size: 6rem">CONTACT</h1>
+  <h1 style="margin-top: -25px;">....................................................................................................................................................</h1>
+  <h2>I'd <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>  to help!</h2>
+  <h4 style="margin-top: 25px;">&nbsp &nbsp I like to create things with fun, Open-minded people. Feel free to say hello!.</h4>
+  <div style="margin-top: 8%">  
+  <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-bottom: 0;"></span> &emsp; Thapar University,<br>&emsp; &emsp; Patiala Punjab,India</h3>
+<h3><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-bottom: 0;"></span> &emsp; (+91) &nbsp 7087-689045<h3>
+<h3><span class="glyphicon glyphicon-envelope" aria-hidden="true" style="margin-bottom: 0;"></span> &emsp; abhaygautam.1303.ag@gmail.com<h3>
+<div  style="position: absolute;display: flex;;
+    align-items: center;
+    list-style: none;
+    margin-left: 42rem;
+    margin-top: 2rem;">
+  <a href="https://github.com/abhaygt03" id="logo" style="padding: 20px;" class="fa fa-github"></a>
+  <a href="https://www.facebook.com/abhay.gautam.1428921" id="logo" style="padding: 20px;" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/in/abhay-gautam-509a93183/" id="logo" style="padding: 20px;" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/abhay_gt03/" id="logo" style="padding: 20px;" class="fa fa-instagram"></a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+   
+</body>
+</html> 
