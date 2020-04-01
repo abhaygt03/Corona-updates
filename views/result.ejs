@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162109940-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162109940-2');
+</script>
 	<title></title>
 </head>
  <meta charset="UTF-8">
@@ -218,7 +227,7 @@ font-size: 3.5vw;
 	  	line-height: 1.8em;">Recent COVID-19 data for <%=net.country%>: </p>
 
 	  	<ul class="skillul">
-	  		<li class="skill">Total Cases : <%=result.total%></li>
+	  		<li class="skill">Corona Virus Cases : <%=result.total%></li>
 	  		<li class="skill">Active Cases : <%=result.active%></li>
 	  		<li class="skill">New Cases : <%=result.new%></li>
 	  		<li class="skill">Recovered Cases : <%=result.recovered%></li>
