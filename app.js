@@ -39,9 +39,6 @@ req.end(function (resp) {
 	}
 	if(resp.body.response[0])
 	{
-	// console.log(resp.body.response[0].cases);
-	// console.log(resp.body.response[0].deaths);
-
 res.render("result.ejs",{net:resp.body.response[0],result:resp.body.response[0].cases,deaths:resp.body.response[0].deaths});
 }
 else{
